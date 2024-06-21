@@ -1,0 +1,28 @@
+{
+  "name": "that-one",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "drizzle:generate": "drizzle-kit generate",
+    "drizzle:migrate": "drizzle-kit push",
+    "drizzle:studio": "drizzle-kit studio --host 127.0.0.1",
+    "prepare": "tsx ./src/prepare.ts",
+    "simulate": "tsx ./src/simulate.ts",
+    "aggregate": "tsx ./src/aggregate.ts"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.10",
+    "drizzle-kit": "^0.22.7",
+    "tsx": "^4.15.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "drizzle-orm": "^0.31.2"
+  }
+}
